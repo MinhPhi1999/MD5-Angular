@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontSizeEditorComponent } from './font-size-editor/font-size-editor.component';
 import {FormsModule} from "@angular/forms";
+import { AngularShowPetInfoComponent } from './angular-show-pet-info/angular-show-pet-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FontSizeEditorComponent
+    FontSizeEditorComponent,
+    AngularShowPetInfoComponent
   ],
   imports: [
     BrowserModule,
