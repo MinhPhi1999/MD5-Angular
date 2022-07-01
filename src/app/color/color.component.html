@@ -1,0 +1,4 @@
+<input type="range" min="0" max="255" [(ngModel)]="red">
+<input type="range" min="0" max="255" [(ngModel)]="blue">
+<input type="range" min="0" max="255" [(ngModel)]="green">
+<div style="width: 300px;height: 100px"  [style.background]="'rgb('+green+','+red+','+blue+')'"></div>
