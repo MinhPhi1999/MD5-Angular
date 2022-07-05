@@ -23,6 +23,7 @@ export class RegisterComponent implements OnInit {
     gender: new FormControl('', [Validators.required]),
     phone: new FormControl('', [Validators.required, Validators.pattern('^\\+84\\d{9,10}$')]),
   });
+  genderdf: 'male';
 
   get password() {
     return this.registerForm.get('password');
