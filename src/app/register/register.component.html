@@ -59,12 +59,9 @@
   </div>
   <p>
     <label>Gender </label>
-    <input type="radio" value="male" name="gender" formControlName="gender" [checked]='true' [(ngModel)]="genderdf"> Male
+    <input type="radio" value="male" name="gender" formControlName="gender" [checked]='true' [(ngModel)]="genderDf"> Male
     <input type="radio" value="female" name="gender" formControlName="gender"> Female
   </p>
-  <div *ngIf="gender.touched && !gender.valid">
-      <p style="color: red">Gender is not required!</p>
-  </div>
   <p>
     <label >Phone </label>
     <input type="text" formControlName="phone" >

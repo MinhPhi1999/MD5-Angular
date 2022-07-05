@@ -8,6 +8,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
   countryDf = 'Ha Noi';
+  genderDf =  'male';
   countryList = [
     {name: 'Ha Noi'},
     {name: 'Ha Nam'},
@@ -20,10 +21,9 @@ export class RegisterComponent implements OnInit {
     confirmpassword: new FormControl('', [Validators.required]),
     country: new FormControl('', [Validators.required]),
     age: new FormControl('', [Validators.required, Validators.min(18)]),
-    gender: new FormControl('', [Validators.required]),
+    gender: new FormControl(),
     phone: new FormControl('', [Validators.required, Validators.pattern('^\\+84\\d{9,10}$')]),
   });
-  genderdf: 'male';
 
   get password() {
     return this.registerForm.get('password');
