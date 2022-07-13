@@ -1,0 +1,26 @@
+<p>create-student works!</p>
+<form [formGroup]="createForm" (ngSubmit)="add()">
+  <p>
+    <label>name</label> <br>
+    <input type="text" formControlName="name">
+    <i class="fa-solid fa-file-signature"></i>
+  </p>
+  <p>
+    <label>age</label> <br>
+    <input type="text" formControlName="age">
+    <i class="fa-solid fa-person"></i>
+  </p>
+  <p>
+    <label>score</label> <br>
+    <input type="text" formControlName="score">
+    <i class="fa-solid fa-star"></i>
+  </p>
+  <p>
+    <select formControlName="clazzId">
+      <option *ngFor="let class of listClass" [value]="class.id">
+        {{class.name}}
+      </option>
+    </select>
+  </p>
+  <button>Tạo mới</button>
+</form>
