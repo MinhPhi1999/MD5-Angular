@@ -1,0 +1,21 @@
+<h2 style="color: red">Tour của Minh</h2>
+<div>
+  <table class="table">
+    <tr class="thead-dark">
+      <td>Id</td>
+      <td>Title</td>
+      <td>Price</td>
+      <td colspan="2">Action</td>
+    </tr>
+    <tr *ngFor="let tour of listTour; let indexOfElement = index">
+      <td scope="row">{{indexOfElement + 1}}</td>
+      <td><a [routerLink]="['/tour',tour.id]">{{tour.title}}</a></td>
+      <td>{{tour.price}}</td>
+      <td><button>edit</button></td>
+      <td><button>delete</button></td>
+    </tr>
+  </table>
+</div>
+<router-outlet></router-outlet>
+
+

@@ -1,0 +1,16 @@
+<h3 style="color: red">Create Form</h3>
+<form [formGroup]="formCreate" (ngSubmit)="create()">
+  <p>
+    <label >Title: </label><br>
+    <input type="text" formControlName="title">
+  </p>
+  <p>
+    <label >Price: </label><br>
+    <input type="text" formControlName="price">
+  </p>
+  <p>
+    <label >Description: </label><br>
+    <textarea type="textarea" formControlName="des"></textarea>
+  </p>
+  <button>Tạo</button>
+</form>
